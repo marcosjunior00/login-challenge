@@ -22,7 +22,7 @@ export default function LoginForm() {
 
         <div className='button'>
           <button 
-            disabled={!email || !password}
+            disabled={!email || !password || password.length < 6}
           >
             Login
           </button>
